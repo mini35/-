@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    background-image: url(마동석.jpg),url(내뺀다내빼.jpg);
+    background-position: left, right;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    height: 290px;
+    text-align:center;
+    border-bottom: 20px solid yellow;
+    margin: 0;
+    padding: 5px;
+    border-top: 20px solid yellow;
+}
+
+h2 {
+    text-align: center;
+    font-size: 23px;
+}
+
+ol {
+    border-right: 20px solid yellow;
+    width: 120px;
+    margin: 0;
+    padding: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+    padding-left: 33px;
+}
+
+#article {
+    padding-left: 25px;
+}
+
+p {
+    text-align: center;
+}
+
+@media(max-width:1450px) {
+    #grid {
+        display: block;
+    }
+
+    ol {
+        border-right: none;
+        border-bottom: 20px solid yellow;
+        width: auto;
+    }
+
+    h1 {
+        border-bottom: 20px solid yellow;
+        border-top: 20px solid yellow;
+        background-image: none;
+    }
+
+    p {
+        text-align: center;
+    }
+}
