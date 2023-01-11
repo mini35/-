@@ -49,7 +49,7 @@ p {
     text-align: center;
 }
 
-@media(max-width:1450px) {
+@media(max-width:800px) {
     #grid {
         display: block;
     }
