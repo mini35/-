@@ -5,6 +5,16 @@
     <title>노랑통닭 상모사곡점</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function dark_mode() {
+            document.querySelector("body").style.backgroundColor="rgb(47, 52, 55)"; 
+            document.querySelector("body").style.color="white";
+        }
+        function light_mode() {
+            document.querySelector("body").style.backgroundColor="white"; 
+            document.querySelector("body").style.color="black";
+        }
+ </script>
 </head>
 
 <body>
@@ -14,6 +24,8 @@
             <li><a href="1.html">노통 신념</a></li>
             <li><a href="2.html">점주 소개</a></li>
             <li><a href="3.html">이달의 우수사원</a></li>
+            <button onclick=light_mode()>기본모드 🌞</button>
+    	<button onclick=dark_mode()>야간모드 🌛</button>
         </ol>
         <div id="article">
             <h2>점주 소개</h2>
